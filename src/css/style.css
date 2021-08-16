@@ -1,0 +1,52 @@
+/* ./your-css-folder/styles.css */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+
+*{
+box-sizing: border-box;
+padding: 0;
+margin:0;
+
+}
+
+html{
+font-size: 62.5%;
+font-family: 'Roboto Slab', serif;
+
+}
+
+#container{
+width: 100vw;
+height: 100vh;
+background-color:white;
+
+}
+
+nav{
+display: flex;
+justify-content:space-around;
+align-items: center;
+}
+
+nav ul{
+list-style: none;
+}
+
+nav ul li{
+display: inline-block;
+font-size: 1.8rem;
+margin-left: 12px;
+background-color: deepskyblue;
+padding: 10px;
+
+}
+
+nav ul li:hover{
+
+background-color: gold;
+cursor: pointer;
+
+}
