@@ -42,7 +42,7 @@ fetch("https://api-football-v1.p.rapidapi.com/v3/leagues?country=England", {
 });*/
 
 const layer=document.querySelector('#layerMenu');
-//layer.style.visibility='hidden';
+layer.style.visibility='hidden';
 
 const showMenu=()=>{
 
@@ -58,7 +58,7 @@ layer.style.visibility='hidden';
 
   
 const menu=document.querySelector('img.menu');
-const menuItem=document.querySelector('li');
+const container=document.querySelector('ul');
 
 menu.addEventListener('click',showMenu);
-menuItem.addEventListener('click',hideMenu);
+container.addEventListener('click',hideMenu);
