@@ -1,78 +1,93 @@
-
 *{
-box-sizing: border-box;
-padding: 0;
-margin:0;
 
+    box-sizing: border-box;
+    padding:0;
+    margin:0;
 }
 
-html{
+html{    
+
 font-size: 62.5%;
 font-family: 'Encode Sans Semi Condensed', sans-serif;
 
+
 }
 
-#container{
+.MainContainer{
 width: 100vw;
 height: 100vh;
-background-color:white;
+min-width:320px;
+background-color:navy;
 
 }
 
 header{
-    background: rgb(2,0,36);
-    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 35%, rgba(0,212,255,1) 100%);
 
+    width:100%;
+  
+    min-width:320px;
 }
+
+header nav .menu{
+
+width: 30px;
+cursor: pointer;
+}
+
+
 h1{
 
-font-size: 2.0rem;
-color: white;
-
+font-size: 4.0rem;
+color:skyblue;
 }
 
 nav{
 display: flex;
-justify-content: center;
-align-items: center;
-height: 25vh;
+justify-content:space-between;
+height: 50px;
 }
 
-.logo{
 
-width: 120px;
 
-}
 
-.logo-container{
-width: 300px;
+
+
+
+
+
+.Main__SearchContainer{
 display: flex;
-justify-content:center;
-align-items: center;
+justify-content: space-around;
+width: 600px;
+height: 120px;
+margin: 25px auto;
+
+padding: 20px;
+border-radius: 20px;
+box-shadow: 5px 10px;
 }
 
-nav ul{
-list-style: none;
+.Main__SeachContainer--input{
+    display: flex;
+    align-items: center;
 }
 
-nav ul li{
-display: inline-block;
-font-size: 1.8rem;
-margin-left: 12px;
-background-color: deepskyblue;
-padding: 10px;
+.inputSearch {
 
+width:400px;
+height: 50px;
+font-size: 2.5rem;
+border-radius: 10px;
+outline: none;
+border:0;
+background-color:white;
 }
 
-nav ul li:hover{
 
-background-color: gold;
-cursor: pointer;
 
-}
-
-nav ul li a{
-
-text-decoration: none;
-
-}
+.Main__SeachContainer--button{
+    display: flex;
+    align-items: center;
+  
+    
+    }

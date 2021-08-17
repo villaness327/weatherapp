@@ -1,5 +1,5 @@
 
-
+/*
 const URL_API="livescore6.p.rapidapi.com/matches/v2/list-live?Category=soccer";
 
 
@@ -40,3 +40,25 @@ fetch("https://api-football-v1.p.rapidapi.com/v3/leagues?country=England", {
 .catch(err => {
 	console.error(err);
 });*/
+
+const layer=document.querySelector('#layerMenu');
+//layer.style.visibility='hidden';
+
+const showMenu=()=>{
+
+layer.style.visibility='visible';
+  
+  };
+
+const hideMenu=()=>{
+
+layer.style.visibility='hidden';
+
+}
+
+  
+const menu=document.querySelector('img.menu');
+const menuItem=document.querySelector('li');
+
+menu.addEventListener('click',showMenu);
+menuItem.addEventListener('click',hideMenu);
