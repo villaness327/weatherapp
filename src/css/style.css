@@ -23,6 +23,7 @@ main{
     width: 100vw;
     height: 100vh;
     min-width: 320px;
+    position: relative;
 }
 
 
@@ -97,12 +98,32 @@ nav{
 
 }
 
+.search{
+    position: absolute;
+    top:25px;
+    margin: 0 auto;
+}
+
+.results{
+    display: flex;
+    position: relative;
+    justify-content: center;
+}
+
 .weatherBox{
-margin-top: 50px;
-width:300px;
-height: 250;
-background-color: #1e1a3e;
-margin: 0 auto;
+    position: absolute;
+    top:90px; 
+    width:300px;
+    height: 350px;
+    background-color: #1e1a3e;
+
+}
+
+.temperature{
+    font-size: 9.0rem;
+    font-weight: bold;
+    color: white;
+
 }
 
 
