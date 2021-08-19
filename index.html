@@ -11,14 +11,13 @@
  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
  <link href="https://fonts.googleapis.com/css2?family=Encode+Sans+Semi+Condensed&display=swap" rel="stylesheet">
  <link rel="stylesheet" href="./src/css/style.css">
- <script src="./src/index.js" async></script>
 </head>
 <body>
 <div class="mainContainer">
     <header>
         <nav>        
          <h1>Weather APP</h1>
-         <img src="./src/images/menu.png" alt="" class="menu">      
+         <img src="./src/images/menu.png" alt="" class="menu" id="menuIcon">      
         </nav>
         <div id="layerMenu" class="layerMenu">            
             <ul>
@@ -30,11 +29,38 @@
     </header>
     <main>
 
+        <div id="formSearch mt-50">
+            <div class="row mx-auto">
+                <div class="col-8"><input type="text" class="form-control searchBox" id="searchBox" placeholder="Ingrese una Ciudad..."></div>
+                <div class="col-4"><button class="buttonSearchBox" id="buttonSearchBox">Buscar</button></div>
+            </div>
+        </div>
+        <div id="badInput" class="badInput"></div>
+        <div id="results" class="results">
+
+          <div class="weatherBox">
+           <p class="temperature">14<span class="country">cl</span></p>
+           
+
+
+
+          </div>
+
+
+
+
+
+
+
+
+        </div>
+
 
     </main>
     <footer>
   
     </footer>
-</div>    
+</div> 
+<script type="module" src="./src/index.js"></script>   
 </body>
 </html>

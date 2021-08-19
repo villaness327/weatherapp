@@ -7,95 +7,103 @@
 
 html{    
 
-font-size: 62.5%;
-font-family: 'Encode Sans Semi Condensed', sans-serif;
-
-
+    font-size: 62.5%;
+    font-family: 'Encode Sans Semi Condensed', sans-serif;
 }
 
 .mainContainer{
     background: #f12711;  /* fallback for old browsers */
     background: -webkit-linear-gradient(to right, #f5af19, #f12711);  /* Chrome 10-25, Safari 5.1-6 */
     background: linear-gradient(to right, #f5af19, #f12711); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-    min-width:325px;
-    position: relative;
-  
+    min-width:320px;
+    position: relative;  
 }
 
 main{
-
     width: 100vw;
     height: 100vh;
-    min-width: 325px;
-
+    min-width: 320px;
 }
 
-.Main__SearchContainer{
 
-position: absolute;
-top:40px;
-z-index: 0;
-}
 
 header{
 
-    width:100vw;
-  
+    width:100vw;  
     min-width:320px;
 }
 
 header nav .menu{
 
-width: 30px;
-cursor: pointer;
+    width: 30px;
+    cursor: pointer;
 }
 
 
 h1{
 
-font-size: 4.0rem;
-color:white;
+    font-size: 4.0rem;
+    color:white;
 }
 
 nav{
-display: flex;
-justify-content:space-between;
-align-items: center;
+    display: flex;
+    justify-content:space-around;
+    align-items: center;
 }
 
 
 
 .layerMenu ul{
-     position: absolute;
-    top:60px;
+    position: absolute;
+    top:50px;
     background-image: linear-gradient(to bottom, #051937, #1e1a3e, #341a41, #491740, #5b153a);
     width: 100vw;
     height: 100vh;
-    z-index:1;
-    
-    }
+    z-index:1;    
+}
 
 
 .layerMenu ul li{
-
-list-style: none;
-font-size: 1.9rem;
-font-weight: bold;
-border-bottom: solid 1px goldenrod;
-
-
+    list-style: none;
+    font-size: 1.9rem;
+    font-weight: bold;
+    border-bottom: solid 1px goldenrod;
 }
 
 .layerMenu ul li a{
     text-decoration: none;
-    color: white;
-  
+    color: white;  
 }
 
+.searchBox{
+    width: 200px;
+    height: 50px;
+    background-color:white;
+    font-size: 1.8rem;
+    font-weight: bold;
+    color:black;
+    border-radius: 15px;
+    }
 
+.buttonSearchBox{
+    width: 80px;
+    height: 50px;
+    background-color:blueviolet;
+    border-radius: 10px;
+    box-shadow: 5px 10px black;
+    font-size: 1.8rem;
+    color: white;
 
+}
 
-
+.weatherBox{
+margin-top: 50px;
+width:300px;
+height: 250;
+background-color: #1e1a3e;
+margin: 0 auto;
+}
 
 
 
