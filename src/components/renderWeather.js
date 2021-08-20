@@ -1,6 +1,8 @@
 const renderWeather=(data)=>{
 
-    const {main,name,sys,weather}=data;
+    
+    console.log(data);
+ 
 
   
 
