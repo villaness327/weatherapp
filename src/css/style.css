@@ -114,15 +114,22 @@ nav{
     top:90px; 
     width:250px;
     height: 350px;
-    background-color: #1e1a3e;
-
+    background-color:#1e1a3e;
 }
 
 .temperatureActual{
-    margin-top: 30px;
+    text-align: center;
     font-size: 9.0rem;
     font-weight: bold;
     color: white;
+}
+
+.descriptionWeather{
+    font-weight: bold;
+    color:white;
+    text-align: center;
+    font-size: 1.2rem;
+    text-transform: uppercase;
 }
 
 .temperatureMaxMin{
@@ -132,6 +139,13 @@ nav{
   text-align: center;
  
 
+}
+
+.city{
+    color:white;
+    font-size: 1.9rem;
+    text-align: center;
+    font-weight: bold;
 }
 
 .country{
@@ -145,6 +159,15 @@ nav{
     position: absolute;
     top:10px;
     right: 10px;
+    color: white;
+    font-weight: bold;
+}
+
+.iconWeather{
+    margin-left: 15px;
+
+
+
 }
 
 
