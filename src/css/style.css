@@ -113,13 +113,13 @@ nav{
     position: absolute;
     top:90px; 
     width:250px;
-    height: 350px;
-    background-color:#1e1a3e;
+    height: 380px;
+    background-color: #0066b2;
 }
 
 .temperatureActual{
     text-align: center;
-    font-size: 9.0rem;
+    font-size: 7.0rem;
     font-weight: bold;
     color: white;
 }
@@ -133,17 +133,15 @@ nav{
 }
 
 .temperatureMaxMin{
-  margin-top: 70px;
-  font-size: 1.8rem;
-  color: #f5af19;
-  text-align: center;
- 
 
+  font-size: 1.5rem;
+  color: white;
+  text-align: center;
 }
 
 .city{
     color:white;
-    font-size: 1.9rem;
+    font-size: 2.0rem;
     text-align: center;
     font-weight: bold;
 }
@@ -164,7 +162,19 @@ nav{
 }
 
 .iconWeather{
-    margin-left: 15px;
+  text-align: center;
+}
+
+.secondaryData{
+
+    font-size: 1.3rem;
+    color:white;
+    text-align: center;
+}
+
+.close{
+     text-align: center;
+     cursor: pointer;
 
 
 

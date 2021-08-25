@@ -29,4 +29,4 @@ const getWeather=async()=>{
     }
   }
 
-  export default getWeather;
+  export default getWeather;// Lo exportamos para que en index.js lo pueda importar

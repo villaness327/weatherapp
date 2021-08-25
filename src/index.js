@@ -17,4 +17,10 @@ layer.style.visibility='hidden';
 
 menuIcon.addEventListener('click',showMenu);
 containerUl.addEventListener('click',hideMenu);
+
+
+
 buttonSearch.addEventListener('click',getWeather);
+
+
+
