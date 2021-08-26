@@ -1,0 +1,22 @@
+main{
+display: flex;
+justify-content: center;
+align-items: flex-start;
+}
+
+
+#search{
+  display: flex;
+  flex-direction: row;
+
+
+}
+
+.searchBox{
+ text-align: center;
+ width: 400px;
+
+}
+
+
+
