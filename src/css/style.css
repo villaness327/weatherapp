@@ -15,34 +15,28 @@ html{
     background: #f12711;  /* fallback for old browsers */
     background: -webkit-linear-gradient(to right, #f5af19, #f12711);  /* Chrome 10-25, Safari 5.1-6 */
     background: linear-gradient(to right, #f5af19, #f12711); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-    min-width:320px;
-    position: relative;  
+    position: absolute;
 }
 
 main{
     width: 100vw;
     height: 100vh;
-    min-width: 320px;
-    position: relative;
+   
 }
 
-
-
 header{
-
     width:100vw;  
     min-width:320px;
 }
 
 header nav .menu{
 
-    width: 30px;
+    width: 25px;
     cursor: pointer;
 }
 
 
 h1{
-
     font-size: 4.0rem;
     color:white;
 }
@@ -50,9 +44,8 @@ h1{
 nav{
     display: flex;
     justify-content:space-around;
-    align-items: center;
-}
 
+}
 
 
 .layerMenu ul{
@@ -77,49 +70,60 @@ nav{
     color: white;  
 }
 
+.search{
+  
+    width: 100%;  
+   
+}
+
+.form{
+   
+    display: flex;
+    flex-direction:column;
+    justify-content: center;
+    align-items: center; 
+    width: 100%;
+}
+
 .searchBox{
-    width: 200px;
+    width: 70%;
     height: 50px;
     background-color:white;
-    font-size: 1.8rem;
+    font-size: 1.5rem;
     font-weight: bold;
     color:black;
     border-radius: 15px;
 }
 
 .buttonSearchBox{
-    width: 80px;
-    height: 50px;
+    width: 50px;
+    height: 30px;  
     background-color:blueviolet;
     border-radius: 10px;
-    box-shadow: 5px 10px black;
-    font-size: 1.8rem;
+    font-size: 1.2rem;
     color: white;
 }
 
-.search{
-    position: absolute;
-    top:25px;
-    margin: 0 auto;
-}
+
 
 .results{
-    display: flex;
-    position: relative;
-    justify-content: center;
+    display: flex; 
+    justify-content:space-around;     
+    font-size:1.4rem;
+    color:white;
+    width: 100%;
+  
 }
 
-.weatherBox{
-    position: absolute;
-    top:90px; 
-    width:250px;
-    height: 380px;
+.weatherBox{ 
+  
     background-color: #0066b2;
+    width: 80%;
 }
 
 .temperatureActual{
     text-align: center;
-    font-size: 7.0rem;
+    font-size: 6.0rem;
     font-weight: bold;
     color: white;
 }
@@ -147,16 +151,13 @@ nav{
 }
 
 .country{
+  
     width: 25px;
     height: 25px;
     background-color: #f5af19;
     border-radius: 50%;
-    font-size: 1.6rem;
-    display:inline-block;   
-    text-align: center;
-    position: absolute;
-    top:10px;
-    right: 10px;
+    font-size: 1.6rem;   
+    text-align: center; 
     color: white;
     font-weight: bold;
 }
@@ -173,12 +174,15 @@ nav{
 }
 
 .close{
-     text-align: center;
+     
      cursor: pointer;
-
-
+     color: white;
+     font-size: 1.3rem;
+     text-align: center;
 
 }
+
+
 
 
 

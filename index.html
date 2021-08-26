@@ -10,35 +10,32 @@
  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
  <link href="https://fonts.googleapis.com/css2?family=Encode+Sans+Semi+Condensed&display=swap" rel="stylesheet">
  <link rel="stylesheet" href="./src/css/style.css">
+ <!--<link rel="stylesheet" href="./src/css/tablet.css" media="(min-width:425px)">-->
 </head>
 <body>
         <div class="mainContainer">
             <header>
-                <nav>        
-                <h1>Weather APP</h1>
-                <img src="./src/images/menu.png" alt="" class="menu" id="menuIcon">      
+                <nav>                    
+                    <div><h1>Clima APP</h1></div>
+                    <div>Menú <img src="./src/images/menu.png" alt="" class="menu" id="menuIcon"></div>    
                 </nav>
                 <div id="layerMenu" class="layerMenu">            
                     <ul>
-                        <li><a href="http://www.lun.com">Acerca de la API</a></li>
-                        <li><a href="#"> Sobre el Autor</a></li>
+                        <li><a href="https://openweathermap.org/api">Acerca de la API</a></li>
+                        <li><a href="#acerca-del-autor"> Sobre el Autor</a></li>
                         <li><a href="#">Accede al Codigo</a></li>
                     </ul>        
                 </div>
             </header>
             <main>
-                    <div id="search" class="row search">
-                        <div class="col-8"><input type="text" class="form-control searchBox" id="searchBox" placeholder="Ingrese una Ciudad..."></div>
-                        <div class="col-4"><button class="buttonSearchBox" id="buttonSearchBox">Buscar</button></div>
-                    </div>      
-            
-                <div id="results" class="results">
-
-
-               
-
-                </div>
-             
+                    <section id="search" class="search">
+                       <form action="#" class="form">
+                            <input type="text" id="searchBox" class="form-control searchBox"  placeholder="Ingrese una Ciudad...">
+                            <button id="buttonSearchBox" class="buttonSearchBox">Buscar</button>
+                       </form>
+                    </section>      
+                    
+                    <section id="results" class="results"></section>                    
             </main>
             <footer></footer>
         </div> 
