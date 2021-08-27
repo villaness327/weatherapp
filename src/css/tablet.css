@@ -1,22 +1,6 @@
-main{
-display: flex;
-justify-content: center;
-align-items: flex-start;
-}
 
+.weatherBox{
 
-#search{
-  display: flex;
-  flex-direction: row;
-
+  width: 30%;
 
 }
-
-.searchBox{
- text-align: center;
- width: 400px;
-
-}
-
-
-

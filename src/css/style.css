@@ -16,16 +16,17 @@ html{
     background: -webkit-linear-gradient(to right, #f5af19, #f12711);  /* Chrome 10-25, Safari 5.1-6 */
     background: linear-gradient(to right, #f5af19, #f12711); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
     position: absolute;
-}
-
-main{
-    width: 100vw;
-    height: 100vh;
    
 }
 
+main{
+    width: 100vw;    
+
+}
+
 header{
-    width:100vw;  
+    width:100vw;
+    height: 10vh;  
     min-width:320px;
 }
 
@@ -52,6 +53,7 @@ nav{
     position: absolute;
     top:50px;
     background-image: linear-gradient(to bottom, #051937, #1e1a3e, #341a41, #491740, #5b153a);
+    background-repeat:repeat-y;
     width: 100vw;
     height: 100vh;
     z-index:1;    
@@ -104,21 +106,20 @@ nav{
     color: white;
 }
 
-
-
 .results{
     display: flex; 
-    justify-content:space-around;     
+    justify-content:center;    
     font-size:1.4rem;
     color:white;
-    width: 100%;
-  
+    width: 100vw;
+    height: 100vh;  
 }
 
-.weatherBox{ 
-  
+.weatherBox{   
     background-color: #0066b2;
     width: 80%;
+    height: 320px;
+    margin-top: 20px;
 }
 
 .temperatureActual{
@@ -154,12 +155,14 @@ nav{
   
     width: 25px;
     height: 25px;
-    background-color: #f5af19;
+    background-color:navy;
     border-radius: 50%;
     font-size: 1.6rem;   
     text-align: center; 
+    vertical-align: center;
     color: white;
     font-weight: bold;
+    margin: 0 auto;
 }
 
 .iconWeather{
@@ -179,6 +182,27 @@ nav{
      color: white;
      font-size: 1.3rem;
      text-align: center;
+
+}
+
+.about{
+
+    width:100vw;
+    height: 100vh;
+    background-color:mediumspringgreen;
+    padding-top: 60px;
+    text-align: center;
+    color: white;
+    font-size: 1.8rem;
+
+}
+
+.pictureAbout{
+
+width: 30%;
+max-width: 250px;
+border: 2px solid white;;
+
 
 }
 

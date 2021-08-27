@@ -10,8 +10,7 @@ const getWeather=async()=>{
       return false;
     }
  
-    try{
-  
+    try{  
       const URL_API=`https://api.openweathermap.org/data/2.5/weather?q=${input.value}&appid=${API_KEY}&lang=sp`;
       const response=await fetch(URL_API);    
       const data=await response.json();
