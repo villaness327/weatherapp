@@ -1,19 +1,26 @@
-import getWeather from './components/getWeather.js'
+import getWeather from './components/getWeather.js';
 
-const layer=document.querySelector('#layerMenu');
-const menuIcon=document.querySelector('#menuIcon');
-const containerUl=document.querySelector('ul');
-const buttonSearch=document.querySelector('#buttonSearchBox');
+const menu=document.querySelector('.NavMenu');//icono de menu
+const menuItems=document.querySelector('.Menu'); //ul
+
+
+const buttonSearch=document.querySelector('#ButtonSearchBox');
+
 buttonSearch.addEventListener('click',getWeather);
 
-layer.style.visibility='hidden';
+const menuDisplay=()=>{
 
-const showMenu=()=>{layer.style.visibility='visible';};  
+    if(window.innerWidth<=550){
+        menuItems.classList.toggle('Visible');
+    }
+}
 
-const hideMenu=()=>{layer.style.visibility='hidden';};
+menu.addEventListener('click',menuDisplay);
+menuItems.addEventListener('click',menuDisplay);
 
-menuIcon.addEventListener('click',showMenu);
-containerUl.addEventListener('click',hideMenu);
+
+
+
 
 
 

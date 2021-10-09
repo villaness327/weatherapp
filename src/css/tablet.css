@@ -1,6 +1,48 @@
+*{
 
-.weatherBox{
+    box-sizing: border-box;
+    padding:0;
+    margin:0;
+}
 
-  width: 30%;
+
+.NavMenu{
+    visibility: hidden;
+}
+
+.Menu{
+    all: unset;
+    width: auto;
+    height: 40px;
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 20px;
+    width: 60%;  
+}
+
+.Menu li{
+
+    font-size: 1.3rem;
+    display: inline-block;    
+    margin-left: 10px;
+    width: auto;
+}
+
+.Menu li a{
+
+    text-decoration: none ;
+    color:white;
+}
+
+.Menu li a:hover{
+ 
+    color:yellowgreen;
+}
+
+.WeatherBox{
+
+ max-width: 500px;
 
 }
+
+

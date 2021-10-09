@@ -10,44 +10,44 @@
  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
  <link href="https://fonts.googleapis.com/css2?family=Encode+Sans+Semi+Condensed&display=swap" rel="stylesheet">
  <link rel="stylesheet" href="./src/css/style.css">
- <link rel="stylesheet" href="./src/css/tablet.css" media="(min-width:550px)">
+ <link rel="stylesheet" href="./src/css/tablet.css" media="(min-width:626px)">
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+ <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/js/all.min.js" integrity="sha512-Tn2m0TIpgVyTzzvmxLNuqbSJH3JP8jm+Cy3hvHrW7ndTDcJ1w5mBiksqDBb8GpE2ksktFvDB/ykZ0mDpsZj20w==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 </head>
-<body>
-        <div class="mainContainer">
+<body>      
             <header>
                 <nav>                    
-                    <div><h1>Clima APP</h1></div>
-                    <div>Menú <img src="./src/images/menu.png" alt="" class="menu" id="menuIcon"></div>    
-                </nav>
-                <div id="layerMenu" class="layerMenu">            
-                    <ul>
+                    <div class="NavTitle"><h1>ClimAPP</h1><span><i class="fas fa-cloud-sun"></i></span></i></div>
+                    <div class="NavMenu"></div>    
+                    <ul class="Menu">
                         <li><a href="https://openweathermap.org/api">Acerca de la API</a></li>
-                        <li><a href="#about"> Sobre el Autor</a></li>
-                        <li><a href="https://github.com/villaness327/weatherapp">Accede al Codigo</a></li>
-                    </ul>        
-                </div>
+                        <li><a href="#About"> Sobre el Autor</a></li>
+                        <li><a href="https://github.com/villaness327/weatherapp">Accede al Código</a></li>
+                    </ul>   
+                </nav>                         
+                               
             </header>
             <main>
-                    <section id="search" class="search">
-                       <form action="#" class="form">
-                            <input type="text" id="searchBox" class="form-control searchBox"  placeholder="Ingrese una Ciudad...">
-                            <button id="buttonSearchBox" class="buttonSearchBox">Buscar</button>
+                    <section class="Search">
+                       <form action="#" class="Form">
+                            <input type="text" id="SearchBox" class="form-control SearchBox"  placeholder="Ingrese una Ciudad...">
+                            <button id="ButtonSearchBox" class="ButtonSearchBox"><i class="fas fa-search"></i></button>
                        </form>
-                    </section>      
-                    
-                    <section id="results" class="results"></section>  
-                    <section id="about" class="about">
-
-                       <img src="./src/images/IMG_20210623_084149_788.jpg" alt="" class="rounded-circle pictureAbout">
-                        <p class="aboutText">Víctor Illanes</p>
-                        <p class="aboutText">Web Developer</p>
-                        <p class="aboutText"><a href="http://www.coderider.cl">www.coderider.cl</a></p>
-
-
+                       <section id="Results" class="Results"></section>  
+                    </section>                  
+                  
+                    <section id="About" class="About">
+                        <img src="./src/images/IMG_20210623_084149_788.jpg" alt="" class="rounded-circle PictureAbout">
+                        <p class="AboutText">Víctor Illanes</p>
+                        <p class="AboutText">Front End Developer</p>
+                        <p class="AboutText">HTML | CSS | REACT.JS | API REST | JS</p>
+                        <p class="AboutText"><a href="http://www.victorillanes.cl">www.victorillanes.cl</a></p>
                     </section>                  
             </main>
-            <footer></footer>
-        </div> 
-  <script type="module" src="./src/index.js"></script>   
+            <footer>
+                <script type="module" src="./src/index.js" async></script> 
+            </footer>
+    
+
 </body>
 </html>

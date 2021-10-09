@@ -1,7 +1,7 @@
 import renderWeather from "./renderWeather.js";
 const API_KEY='5802057e27beed87b79a8ad738ca1558';
-const divResults=document.querySelector('#results');
-const input=document.querySelector('#searchBox');
+const divResults=document.querySelector('#Results');
+const input=document.querySelector('#SearchBox');
 
 const getWeather=async()=>{   
 

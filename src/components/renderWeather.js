@@ -1,11 +1,14 @@
 import kelvinToCelsius from '../utils/convertTemp.js';
 import timeConverter from '../utils/convertTime.js';
-const input=document.querySelector('#searchBox');
-const resultsContainer=document.querySelector('#results');
+const input=document.querySelector('#SearchBox');
+const resultsContainer=document.querySelector('#Results');
+
 
 resultsContainer.addEventListener('click',(event)=>{
 
-    if(event.target.id==='close'){
+    if(event.target.id==='Close'){
+
+        console.log(event.target.parentElement);
         event.target.parentElement.remove();
         input.value="";
         input.focus();
@@ -13,26 +16,30 @@ resultsContainer.addEventListener('click',(event)=>{
 
 });
 
+
 const renderWeather=(data)=>{
-    const divResults=document.querySelector('#results');
+    const divResults=document.querySelector('#Results');
 
     const dataHTML=`
-    <div class="weatherBox">
-        <section class="temperatureActual">${kelvinToCelsius(data.main.temp)}°C</section>
-        <section class="iconWeather"><img src="http://openweathermap.org/img/wn/${data.weather[0].icon}@2x.png" alt="" width="50"> </section>                       
-        <section class="city">${data.name}</section>
-        <section class="country">${data.sys.country}</section>
-        <section class="descriptionWeather">${data.weather[0].description}</section>
-        <section class="temperatureMaxMin">
+    <div class="WeatherBox">
+        <section class="TemperatureActual">${kelvinToCelsius(data.main.temp)}°C</section>
+        <section class="IconWeather"><img src="http://openweathermap.org/img/wn/${data.weather[0].icon}@2x.png" alt="" width="50"> </section>                       
+        <section class="City">${data.name}</section>
+        <section class="Country">${data.sys.country}</section>
+        <section class="DescriptionWeather">${data.weather[0].description}</section>
+        <section class="TemperatureMaxMin">
             <span>Min: ${kelvinToCelsius(data.main.temp_min)}°C</span>
             <span>Max: ${kelvinToCelsius(data.main.temp_max)}°C</span>             
         </section>
-        <section class="secondaryData">Humedad: ${data.main.humidity} %</section>
-        <section class="secondaryData">Hora Salida de Sol: ${timeConverter(data.sys.sunrise)}</section>
-        <section class="secondaryData">Hora Puesta de Sol: ${timeConverter(data.sys.sunset)}</section> 
-        <span id="close" class="close">Cerrar</span> 
+        <section class="SecondaryData">Humedad: ${data.main.humidity} %</section>
+        <section class="SecondaryData">
+          <span>Longitud: ${data.coord.lon}</span>
+          <span>Latitud: ${data.coord.lat}</span>
+        </section>
+        <span id="Close" class="Close">X</span> 
     </div>`;
-   divResults.innerHTML=dataHTML;
-  
+   divResults.innerHTML=dataHTML;  
 }
+   
+
 export default renderWeather;//Lo exportamos para que sea ocuapdo por el getweather.js

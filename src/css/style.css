@@ -9,77 +9,116 @@ html{
 
     font-size: 62.5%;
     font-family: 'Encode Sans Semi Condensed', sans-serif;
+    min-width: 320px;
 }
 
-.mainContainer{
-    background: #f12711;  /* fallback for old browsers */
-    background: -webkit-linear-gradient(to right, #f5af19, #f12711);  /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to right, #f5af19, #f12711); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-    position: absolute;
-   
-}
-
-main{
-    width: 100vw;    
-
-}
 
 header{
-    width:100vw;
-    height: 10vh;  
-    min-width:320px;
+    width:100%; 
+    height: 40px;  
+    position: relative;
+    max-width: 425px;
+    z-index: 3;
 }
 
-header nav .menu{
-
-    width: 25px;
-    cursor: pointer;
-}
-
-
-h1{
-    font-size: 4.0rem;
-    color:white;
-}
 
 nav{
+    width: 100%;
+    height: 40px; 
+    position: fixed;
     display: flex;
-    justify-content:space-around;
-
+    justify-content:space-between;  
+    background-color:#4E0F9E;
 }
 
+ .NavTitle{
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     font-size: 3.0rem;
+     color: darkturquoise;
+     font-weight: bold;    
+     width:auto; 
 
-.layerMenu ul{
-    position: absolute;
-    top:50px;
-    background-image: linear-gradient(to bottom, #051937, #1e1a3e, #341a41, #491740, #5b153a);
-    background-repeat:repeat-y;
+ }
+
+ .NavMenu{
+  
+    background-image: url(../images/menu.jpg) ;
+    background-position: center;
+    background-size: cover;
+    cursor: pointer;
+    width: 65px;
+    height: 40px;
+    margin-right: 10px; 
+   
+}
+
+.Menu{
+
     width: 100vw;
     height: 100vh;
-    z-index:1;    
+    position: absolute;
+    top: 40px;
+    transform: translateX(100%);
+    -webkit-transition: all 0.2s ease 0.2s; /* Para Chrome y Safari */
+    -moz-transition: all 0.2s ease 0.2s; /* Para Mozilla */
+    -o-transition: all 0.2s ease 0.2s; /* Para Ópera */
+    -ms-transition: all 0.2s ease 0.2s; /* Para Explorer */
+    transition: all 0.2s ease 0.2s;    
+    opacity: 0;   
+    background-image: linear-gradient(to top, #30cfd0 0%, #330867 100%);
+
 }
 
+.Menu li{
 
-.layerMenu ul li{
-    list-style: none;
-    font-size: 1.9rem;
-    font-weight: bold;
-    border-bottom: solid 1px goldenrod;
+    font-size: 2.0rem;  
+    margin-bottom: 15px;
+    list-style:none;  
+    width: 100vw;
 }
 
-.layerMenu ul li a{
-    text-decoration: none;
-    color: white;  
+.Menu li a{
+
+ text-decoration: none;
+ color: white;
+
 }
 
-.search{
+.Menu li a:hover{
+   color:yellowgreen;
+
+}
+
+.Visible{
   
-    width: 100%;  
-   
+    transform: translateX(0);    
+    -webkit-transition: all 0.2s ease 0.2s;/*  Para Chrome y Safari */
+    -moz-transition: all 0.2s ease 0.2s; /*  Para Mozilla */
+    -o-transition: all 0.2s ease 0.2s;/*Para Ópera */
+    -ms-transition: all 0.2s ease 0.2s; /* Para Explorer */ 
+    transition: all 0.2s ease 0.2s;
+    opacity: 1;
 }
 
-.form{
-   
+
+main{
+    width: 100vw;
+    height: 100vh;  
+    background-color:yellowgreen;
+    min-width: 320px;   
+}
+
+
+.Search{
+ 
+    padding-top: 30px;
+    width: 100vw;
+    height: 100vh;   
+}
+
+.Form{   
     display: flex;
     flex-direction:column;
     justify-content: center;
@@ -87,49 +126,60 @@ nav{
     width: 100%;
 }
 
-.searchBox{
-    width: 70%;
+.SearchBox{
+    width: 80%;
+    max-width: 500px;
     height: 50px;
     background-color:white;
     font-size: 1.5rem;
     font-weight: bold;
     color:black;
     border-radius: 15px;
+    outline: turquoise;
+    border: none;    
 }
 
-.buttonSearchBox{
-    width: 50px;
+.ButtonSearchBox{
+    width: 60px;
     height: 30px;  
     background-color:blueviolet;
-    border-radius: 10px;
+    border-radius: 5px;
     font-size: 1.2rem;
+    color: white;
+    text-align: center;
+    margin-top: 5px; 
+}
+
+.fa-search{
+    font-size: 1.5rem;
     color: white;
 }
 
-.results{
+.Results{
     display: flex; 
-    justify-content:center;    
+    justify-content:center; 
+    align-items: center;   
     font-size:1.4rem;
     color:white;
     width: 100vw;
-    height: 100vh;  
 }
 
-.weatherBox{   
+.WeatherBox{   
     background-color: #0066b2;
     width: 80%;
     height: 320px;
     margin-top: 20px;
+    position: relative;
 }
 
-.temperatureActual{
+.TemperatureActual{
     text-align: center;
     font-size: 6.0rem;
     font-weight: bold;
     color: white;
 }
 
-.descriptionWeather{
+.DescriptionWeather{
     font-weight: bold;
     color:white;
     text-align: center;
@@ -137,22 +187,20 @@ nav{
     text-transform: uppercase;
 }
 
-.temperatureMaxMin{
-
+.TemperatureMaxMin{
   font-size: 1.5rem;
   color: white;
   text-align: center;
 }
 
-.city{
+.City{
     color:white;
     font-size: 2.0rem;
     text-align: center;
     font-weight: bold;
 }
 
-.country{
-  
+.Country{  
     width: 25px;
     height: 25px;
     background-color:navy;
@@ -165,48 +213,72 @@ nav{
     margin: 0 auto;
 }
 
-.iconWeather{
+.IconWeather{
   text-align: center;
 }
 
-.secondaryData{
-
+.SecondaryData{
     font-size: 1.3rem;
     color:white;
     text-align: center;
 }
 
-.close{
-     
+.Close{
+     display: flex;
+     align-items: center;
+     justify-content: center;
      cursor: pointer;
      color: white;
-     font-size: 1.3rem;
-     text-align: center;
-
+     font-size: 1.2rem;     
+     position: absolute;
+     bottom: -5px;
+     left: -5px;
+     background-color: red;
+     font-weight: bold;
+     padding: 10px;
+     width: 20px;
+     height: 20px;
 }
 
-.about{
+.fa-window-close{
+    color:white;
+    font-size: 2.5rem;
+}
+
+.About{
 
     width:100vw;
     height: 100vh;
-    background-color:mediumspringgreen;
-    padding-top: 60px;
+    background: inherit;
     text-align: center;
     color: white;
     font-size: 1.8rem;
+    min-width: 320px;
+    padding-top:25px;
 
 }
 
-.pictureAbout{
+.AboutText{
 
-width: 30%;
-max-width: 250px;
-border: 2px solid white;;
+ font-size: 1.5rem;
+
 
 
 }
+.PictureAbout{
+
+    width: 30%;
+    max-width: 250px;
+    border: 2px solid white;
+    margin-top: 30px;
+    border-radius: 50%;
+}
 
 
+.fa-cloud-sun{
 
+        font-size: 3.0rem;
+        color: white;
+}
 
 
