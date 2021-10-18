@@ -165,11 +165,12 @@ main{
 }
 
 .WeatherBox{   
-    background-color: #0066b2;
+    background-color:#330867;
     width: 80%;
     height: 320px;
     margin-top: 20px;
     position: relative;
+    border-radius: 10px;
 }
 
 .TemperatureActual{

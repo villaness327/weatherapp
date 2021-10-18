@@ -1,5 +1,4 @@
 import kelvinToCelsius from '../utils/convertTemp.js';
-import timeConverter from '../utils/convertTime.js';
 const input=document.querySelector('#SearchBox');
 const resultsContainer=document.querySelector('#Results');
 
